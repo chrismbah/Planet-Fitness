@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    pad: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",snas-serif;
+    scroll-behavior: smooth;
+}
+:root{
+    --bg-color:#121212;
+    --main-color:#59c977;
+    --text-color:#ffffff;
+    --p-font:1.1rem;
+    --h1-font:3.8rem;
+    --btn-font:1.3rem;
+
+}
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+a,li{
+    text-decoration: none;
+    list-style: none;
+}
+nav{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 18px 4%;
+    top: 0;
+    left: 0;
+}
+.navlist{
+    display: flex;
+}
+#menu-btn{
+    display: none;
+}
+.logo{
+    font-family: "Geologica",sans-serif;
+    font-size: 2.4rem;
+    color: var(--main-color);
+    font-weight: 600;
+}
+.navlist a{
+   margin: 0 25px;
+    color: var(--text-color);
+    font-size: var(--p-font);
+    transition: all .4s ease;
+}
+.navlist a:hover{
+    color: var(--main-color);
+}
+.sign-up{
+    margin: 0 50px;
+    padding: 5px 10px;
+    background: var(--main-color);
+    color: var(--text-color) ;
+    border-radius: .5rem;
+}
+.sign-up a{
+    margin: 0 10px;
+    color:var(--bg-color)
+}
+/* .sign-up:hover{
+    background-color: var(--bg-color);
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+
+} */
+
+section{
+    padding: 70px 7% 60px;
+}
+.header{
+    position: relative;
+    height: 81vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    /* grid-template-columns: repeat(auto-fit,minmax(400px ,auto)); */
+    align-items: center;
+    gap: 4rem;
+    
+}
+.header-text h1{
+    font-size: var(--h1-font);
+    margin:10px 0 7px ;
+
+}
+.header-text span{
+    color: var(--main-color);
+}
+.header-text p{
+    font-size: var(--p-font);
+    line-height: 1.7;
+    letter-spacing: 1px;
+    margin: 10px 0 30px;
+}
+.btn {
+    display: inline-block;
+    padding: 6px 15px;
+    border-radius: .5rem;
+    background-color: var(--main-color);
+    font-size:var(--btn-font) ;
+    color: var(--text-color);
+    letter-spacing: 1px;
+    transition: all .4s ease;
+
+}
+.btn:hover{
+    border: 1px solid var(--main-color);
+    background-color: var(--bg-color);
+    color: var(--main-color);
+}
+
+.header-img img{
+    width: 100%;
+    height: auto;
+    max-width: 320px;
+}
+.header-img{
+    text-align: center;
+}
