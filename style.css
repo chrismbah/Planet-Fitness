@@ -31,6 +31,11 @@ nav{
     padding: 18px 4%;
     top: 0;
     left: 0;
+    z-index: 100;
+}
+nav.scrolled{
+    padding: 13px 4%;
+    background:#1a1919;
 }
 .navlist{
     display: flex;
@@ -60,9 +65,16 @@ nav{
     color: var(--text-color) ;
     border-radius: .5rem;
 }
-.sign-up a{
+.sign-up {
     margin: 0 10px;
-    color:var(--bg-color)
+    color:var(--bg-color);
+    transition: all .4s easee;
+}
+.sign-up i{
+    color: var(--text-color);
+}
+.sign-up:hover{
+    transform: scale(.95);
 }
 /* .sign-up:hover{
     background-color: var(--bg-color);
@@ -82,7 +94,7 @@ section{
     grid-template-columns: repeat(2,1fr);
     /* grid-template-columns: repeat(auto-fit,minmax(400px ,auto)); */
     align-items: center;
-    gap: 4rem;
+    gap: 8rem;
     
 }
 .header-text h1{
@@ -103,24 +115,56 @@ section{
     display: inline-block;
     padding: 6px 15px;
     border-radius: .5rem;
-    background-color: var(--main-color);
+    background-color: var(--bg-color);
     font-size:var(--btn-font) ;
-    color: var(--text-color);
+    color: var(--main-color);
     letter-spacing: 1px;
+    border: 1px solid var(--main-color);
+
     transition: all .4s ease;
 
 }
 .btn:hover{
-    border: 1px solid var(--main-color);
-    background-color: var(--bg-color);
-    color: var(--main-color);
+    background-color: var(--main-color);
+    color: var(--text-color);
 }
 
 .header-img img{
     width: 100%;
     height: auto;
-    max-width: 320px;
+    max-width: 330px;
 }
 .header-img{
     text-align: center;
 }
+.middle-text {
+    color: var(--main-color);
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.middle-text p{
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+.about-us{
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit,minmax(320px,auto)); */
+    grid-template-columns: repeat(2,1fr);
+    gap: 6rem;
+}
+.about-img img{
+    width: 100%;
+    height: auto;
+}
+.about-text h1{
+    color: var(--main-color);
+    margin-bottom: 2rem;
+    font-size: 26px;
+    font-weight: 600;
+}
+.about-text p{
+    line-height: 1.5;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+} 
