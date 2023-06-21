@@ -210,11 +210,11 @@ section{
 .col-txt{
     position: relative;
     bottom: 10px;
-    
+
 }
 .col-txt h3{
     color: var(--main-color);
-    padding-top: 10px;
+    padding: 22px 0 0 0;
 
 }
 .col-txt p{
