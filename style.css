@@ -7,6 +7,7 @@
 }
 :root{
     --bg-color:#121212;
+    --secondary-color:#1a1919;
     --main-color:#59c977;
     --text-color:#ffffff;
     --p-font:1.1rem;
@@ -33,9 +34,13 @@ nav{
     left: 0;
     z-index: 100;
 }
+.main{
+    max-width: 2000px;
+    margin: auto;
+}
 nav.scrolled{
     padding: 13px 4%;
-    background:#1a1919;
+    background:var(--secondary-color);
 }
 .navlist{
     display: flex;
@@ -168,3 +173,16 @@ section{
     letter-spacing: 1px;
     margin-bottom: 2rem;
 } 
+.col{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,auto));
+}
+.col-content{
+    
+}
+.col-img img{
+    width: 100%;
+    height: auto;
+}
+.col-content a{
+}
