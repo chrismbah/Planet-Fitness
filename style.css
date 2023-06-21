@@ -13,6 +13,7 @@
     --p-font:1.1rem;
     --h1-font:3.8rem;
     --btn-font:1.3rem;
+    --btn-font-small:1rem;
 
 }
 body{
@@ -107,7 +108,7 @@ section{
     margin:10px 0 7px ;
 
 }
-.header-text span{
+ span{
     color: var(--main-color);
 }
 .header-text p{
@@ -147,6 +148,7 @@ section{
     font-size: 30px;
     text-align: center;
     margin-bottom: 3rem;
+    padding-top: 18px;
 }
 .middle-text p{
     font-size: 1.2rem;
@@ -176,13 +178,45 @@ section{
 .col{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(300px,auto));
+    align-items: center;
+    gap: 2rem;
+    margin-top: 25px;
 }
 .col-content{
-    
+    background: var(--secondary-color);
+    padding: 20px 30px;
+    height: 430px;
 }
 .col-img img{
     width: 100%;
     height: auto;
 }
-.col-content a{
+.col-content .btn2 {
+    position: absolute;
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: .5rem;
+    background-color: var(--main-color);
+    font-size:var(--btn-font-small) ;
+    color: var(--bg-color);
+    transition: all .4s ease;
+
+}
+.btn2:hover{
+    background-color: var(--bg-color);
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+}
+.col-txt{
+    position: relative;
+    bottom: 10px;
+    
+}
+.col-txt h3{
+    color: var(--main-color);
+    padding-top: 10px;
+
+}
+.col-txt p{
+    margin-bottom: 10px;
 }
