@@ -207,7 +207,7 @@ section{
     color: var(--main-color);
     border: 1px solid var(--main-color);
 }
-.col-txt{
+.btn2{
     position: relative;
     bottom: 10px;
 
