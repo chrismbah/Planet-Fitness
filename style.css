@@ -235,9 +235,14 @@ section{
     gap: 4rem;
 }
 .plan-content{
+    cursor: pointer;
     background-color: var(--secondary-color);
     padding: 20px 18px;
     height: 400px;
+    transition: all .4s ease;
+}
+.plan-content:hover{
+    transform: translateY(-10px);
 }
 .plan-top i{
     color: var(--main-color);
