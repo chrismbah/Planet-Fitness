@@ -94,7 +94,7 @@ section{
 }
 .header{
     position: relative;
-    height: 81vh;
+    height: 82vh;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -238,11 +238,11 @@ section{
     cursor: pointer;
     background-color: var(--secondary-color);
     padding: 20px 18px;
-    height: 400px;
+    height: 410px;
     transition: all .4s ease;
 }
 .plan-content:hover{
-    transform: translateY(-10px);
+    transform: translateY(-8px);
 }
 .plan-top i{
     color: var(--main-color);
@@ -257,4 +257,43 @@ section{
 }
 .plan-bottom i{
     color: var(--main-color);
+}
+.sponsors{  
+    background: var(--main-color);
+
+}
+.s-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.s-img{
+  filter: grayscale(100%);
+
+}
+.s-img:hover{
+  filter: grayscale(0%);
+
+}
+.review-container{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit,minmax(300px,auto));
+    gap: 2rem;
+}
+.review-box{
+    display: flex;
+}
+.review-card{
+    background: var(--secondary-color);
+    padding: 15px;
+}
+.review-img{
+    width: 30%;
+    margin-right: 10px;
+}
+.review-img img{
+    width: 100%;
+    border-radius: 50%;
 }
