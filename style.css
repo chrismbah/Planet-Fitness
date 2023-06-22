@@ -222,6 +222,12 @@ section{
 .col-txt p{
     margin-bottom: 5px;
 }
+.pricing{
+    background: var(--main-color);
+}
+.pricing .middle-text h1{
+    color: var(--bg-color);
+}
 .plan{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(300px,auto));
@@ -230,5 +236,20 @@ section{
 }
 .plan-content{
     background-color: var(--secondary-color);
-    padding: 20px 15px;
+    padding: 20px 18px;
+    height: 400px;
+}
+.plan-top i{
+    color: var(--main-color);
+    font-size: 30px;
+}
+.plan-top h2{
+    font-size: 35px;
+    margin: 5px 0 10px ;
+}
+.plan-bottom p{
+    margin-bottom: 10px;
+}
+.plan-bottom i{
+    color: var(--main-color);
 }
