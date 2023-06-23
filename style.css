@@ -152,8 +152,8 @@ section{
     padding-top: 18px;
 }
 .middle-text p{
-    font-size: 1.2rem;
-    color: var(--text-color);
+    font-size: var(--p-font);
+    color:white
 }
 .about-us{
     display: grid;
@@ -281,7 +281,7 @@ section{
 .review-container{
     display: grid;
     align-items: center;
-    grid-template-columns: repeat(auto-fit,minmax(300px,auto));
+    grid-template-columns: repeat(auto-fit,minmax(320px,auto));
     gap: 2rem;
 }
 .review-box{
@@ -290,7 +290,7 @@ section{
 .review-card{
     background: var(--secondary-color);
     padding: 20px;
-    height: 250px;
+    height: 270px;
 }
 .review-img{
     width: 30%;
@@ -304,8 +304,18 @@ section{
     padding-top: 10px;
     margin-bottom: 15px;
 }
+.review-info i{
+    vertical-align:middle;
+    font-size: 19px;
+    color: var(--main-color);
+}
+.review-info span{
+    color: var(--text-color);
+    margin-right: 3px;
+}
 .review-text p{
-    font-size: .9rem;
+    padding-top: 15px;
+    font-size: .8rem;
 }
 .footer{
     display: flex;
@@ -326,58 +336,81 @@ section{
     font-size: var(--p-font);
 }
 .f-links a:hover{
-    color: #969292
+    color: #969292;
 }
 .socials i{
     font-size: 30px ;
     color: var(--text-color);
-    margin-right: 10px;
+    margin-right: 15px;
 }
 .socials i:hover{
     color: var(--main-color);
 }
-/* .footer{
-    display: grid;
-    align-items: center;
-    grid-template-columns: repeat(auto-fit,minmax(250px,auto));
-    gap: 2rem;
+.contact{
+    border-bottom: 1px solid  #474545;
 }
-.footer h3{
-    color: var(--main-color);
-    font-weight: 600;
-    margin-bottom: 20px;
-    font-size: var(--btn-font);
+.copyright{
+    padding: 15px 0;
+    text-align: center;
 }
-.f-links p {
-    margin-bottom: 10px;
+@media (max-width:1200px) {
+    .navlist a{
+        margin: 0 15px;
+       
+     }
+     nav{
+     
+        padding: 15px 3%;
+        
+    }
+}
+@media (max-width:1090px) {
+    #menu-btn{
+        display: initial;
+        font-size: 45px;
+        z-index: 100001;
+    }
+    nav{
+        position: relative;
+    }
+   
+    .navlist{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 0;
+        right: 0;
+        gap: 2rem;
+        text-align: center;
+        width: 30%;
+        background-color: var(--main-color);
+        height: auto;
+        padding-top: 75px;
+        overflow: hidden;
+        transition: all .5s ease;
+    }
+    /* .sign-up{
+        position: absolute;
+        display: inline-block;
+        top: 500px;
+        right:0;
+        margin-top: 10px;
+        width: 30%;
+        background: none;
 
+    } */
+    .navlist li{
+        padding: 15px 0px;
+        margin:5px 0px;
+    }
+    .navlist li a{
+        display: block;
+        color: var(--bg-color);
+    }
+    .navlist a:hover{
+        color: var(--text-color);
+    }
+    .sign-up {
+        display: none;
+    }
 }
-.f-links a{
-    color: var(--text-color);
-    text-align: left;
-
-}
-.f-links a:hover{
-
-    color: var(--main-color);
-}
-.socials i{
-    display: block;
-    color: var(--text-color);
-}
-.socials i:hover{
-    color: var(--main-color);
-}
-.social-links{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    
-}
-.social-links i{
-    transition: all .5s ease;
-    font-size:1.5rem ;
-}
-.social-links i:hover{
-    color: var(--main-color);
-} */
