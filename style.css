@@ -7,6 +7,7 @@
 }
 :root{
     --bg-color:#121212;
+
     --secondary-color:#1a1919;
     --main-color:#59c977;
     --text-color:#ffffff;
@@ -315,16 +316,16 @@ section{
 .footer h3{
     color: var(--main-color);
     font-weight: 600;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-size: var(--btn-font);
 }
-.f-links ul li{
-    list-style: none;
+.f-links p {
     margin-bottom: 10px;
-    text-align: left;
+
 }
-.f-links ul li a{
+.f-links a{
     color: var(--text-color);
+    text-align: left;
 
 }
 .f-links a:hover{
@@ -340,4 +341,13 @@ section{
 .social-links{
     display: flex;
     align-items: center;
+    gap: 20px;
+    
+}
+.social-links i{
+    transition: all .5s ease;
+    font-size:1.5rem ;
+}
+.social-links i:hover{
+    color: var(--main-color);
 }
