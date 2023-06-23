@@ -10,3 +10,7 @@ menu.onclick=function(){
  menu.classList.toggle("bx-x");
  navlist.classList.toggle("hidden")
 }
+window.onscroll=()=>{
+ menu.classList.remove("bx-x");
+ navlist.classList.remove("hidden")
+}
