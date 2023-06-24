@@ -301,10 +301,12 @@ span {
 }
 
 .s-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(40px, auto));
+    display: flex;
     align-items: center;
-    text-align: center;
+    justify-content: space-between;
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40px, auto));
+    align-items: center; */
 }
 
 .s-img {
@@ -424,7 +426,6 @@ span {
     .navlist a {
         margin: 0 15px;
     }
-
     nav {
         padding: 15px 3%;
     }
@@ -447,11 +448,7 @@ span {
 }
 
 @media (max-width:1090px) {
-    :root {
-        --p-font: 1rem;
-        --h1-font: 3rem;
-        --btn-font: 1.1rem;
-    }
+  
     #menu-btn {
         display: initial;
         font-size: 45px;
@@ -520,6 +517,11 @@ span {
         grid-template-columns: 1fr;
         height: 100vh;
         gap: 3rem;
+    }
+    :root {
+        --p-font: 1rem;
+        --h1-font: 3rem;
+        --btn-font: 1.1rem;
     }
 
 
