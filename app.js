@@ -14,17 +14,18 @@ window.onscroll=()=>{
  menu.classList.remove("bx-x");
  navlist.classList.remove("hidden")
 }
-const scroll1 = ScrollReveal({
-    origin:"top",
+const sr = ScrollReveal({
     distance:"85px",
     duration:"2500",
     reset:true
 })
-const scroll2 = ScrollReveal({
-    origin:"right",
-    distance:"85px",
-    duration:"2500",
-    reset:true
-})
-scroll1.reveal(".header-text",{delay:300});
-scroll2.reveal(".header-img",{delay:300});
+
+
+sr.reveal(".header-text",{delay:300,origin:"top"});
+sr.reveal(".header-img",{delay:500,origin:"right",distance:"40px"});
+sr.reveal(".about-img",{delay:350,origin:"top",distance:"20px"});
+sr.reveal(".about-text",{delay:400,origin:"top",distance:"40px"});
+sr.reveal(".middle-text",{delay:200,origin:"left"});
+sr.reveal(".col-content",{delay:400,origin:"top",distance:"30px"});
+sr.reveal(".plan-content",{delay:200,origin:"top",distance:"10px"});
+sr.reveal(".review-card",{delay:400,origin:"right",distance:"30px"});
