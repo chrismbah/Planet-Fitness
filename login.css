@@ -21,12 +21,12 @@
 }
 .login-card{
     width: 500px;
-    height: 500px;
+    height: auto;
 
     background-color: var(--secondary-color);
     border-radius: 2.2rem;
     position: relative;
-    padding: 10px 70px;
+    padding: 20px 70px;
 }
 .logo-container{
     text-align: center;
@@ -41,9 +41,15 @@
     text-align: center;
     font-size:1.4rem;
     margin-bottom: 20px;
+    letter-spacing: 1px;
 }
 .logo-text h4{
-    font-weight: 500;
+    font-weight: 400;
+
+}
+.logo-text span{
+    font-weight: 700;
+    font-size: 1.5rem;
 }
 a{
     text-decoration: none;
@@ -63,6 +69,10 @@ a{
     margin-bottom: 18px;
     border: 1px solid var(--main-color);
     border-radius: 2rem;
+    transition: .3s all ease;
+}
+.google:hover,.apple:hover{
+    background: #292828;
 }
 span{
     font-size: .9rem;
@@ -81,9 +91,9 @@ span{
 .line span:after{
     content: "";
     display: inline-block;
-    width: 30%;
+    width: 46%;
     height: 2px;
-    background-color: var(--bg-color);
+    background-color: #353434;
     margin-left:6px;
     vertical-align: middle;
 
@@ -91,20 +101,48 @@ span{
 .line span:before{
     content: "";
     display: inline-block;
-    width: 30%;
+    width: 46%;
     height: 2px;
-    background-color: var(--bg-color);
+    background-color: #353434;
     margin-right:6px;
     vertical-align: middle;
 }
 .input{
     text-align: center;
+    margin-bottom: 25px;
 }
 .text-bar{
     width: 100%;
-    padding: 10px 8px;
-    font-size: .9rem;
-    background:#e9e6e6 ;
+    padding: 11px 8px;
+    font-size: .95rem;
     border-radius: .5rem;
     outline: none;
+    border: none;
+}
+.next,.forgot{
+    display: block;
+    text-align: center;
+    width: 100%;
+    color: var(--bg-color);
+    background: var(--text-color);
+    padding: 8px 0;
+    border-radius: 2rem;
+    margin-bottom: 20px;
+    transition: .2s all ease;
+}
+.next:hover,.forgot:hover{
+    background:#353434;
+    color: black;
+}
+.account{
+    text-align: center;
+}
+.account p{
+    color: var(--text-color);
+    font-size: .8rem;
+}
+.account a{
+    
+    color: var(--main-color);
+    text-decoration: underline;
 }
