@@ -109,7 +109,6 @@ section {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /* grid-template-columns: repeat(auto-fit,minmax(400px ,auto)); */
     align-items: center;
     gap: 7rem;
 
@@ -505,22 +504,20 @@ span {
         --h1-font: 3rem;
         --btn-font: 1.1rem;
     }
-    .header {
-        grid-template-columns: 1fr;
-        height: 100vh;
-        gap: 4rem;
-    }
 }
-@media (max-width:850px) {
+@media (max-width:750px) {
    
     .header {
         grid-template-columns: 1fr;
-        height: 100vh;
+        height: auto;
         gap: 2rem;
     }
 }
 
 @media (max-width:429px) { 
+    .logo {
+        font-size: 1.9rem;
+    }
     .f-links,.socials {
     width: 100%;
 }
@@ -530,7 +527,14 @@ span {
     padding: 70px 7% 30px;
 }
 .copyright p,.copyright i{
-    font-size: .9rem;
+    font-size: .7rem;
 }
+
+}
+@media (max-width:370px) { 
+    .header{
+        padding-top: 10px;
+    }
+    
 
 }

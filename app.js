@@ -29,4 +29,5 @@ sr.reveal(".middle-text",{delay:200,origin:"left"});
 sr.reveal(".col-content",{delay:400,origin:"top",distance:"30px"});
 sr.reveal(".plan-content",{delay:200,origin:"top",distance:"10px"});
 sr.reveal(".review-card",{delay:400,origin:"right",distance:"30px"});
-sr.reveal(".f-links",".social-links",{delay:400,origin:"top",distance:"30px"});
+sr.reveal(".f-links",{delay:400,origin:"top",distance:"20px"});
+sr.reveal(".socials",{delay:400,origin:"top",distance:"20px"});

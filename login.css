@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+:root {
+    --bg-color: #121212;
+    --secondary-color: #1a1919;
+    --main-color: #59c977;
+    --text-color: #ffffff;
+}
+
+.login{
+    height: 100vh;
+    width: 100%;
+    background: var(--bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-card{
+    width: 500px;
+    height: 500px;
+    background-color: var(--secondary-color);
+    border-radius: 2.2rem;
+    position: relative;
+    padding: 10px 15px;
+}
+.logo-container{
+    text-align: center;
+    padding-bottom: 6px;
+}
+#logo{
+    font-size: 2.2rem;
+    color: var(--main-color);
+}
+.logo-text{
+    color: var(--text-color);
+    text-align: center;
+    font-size:1.4rem;
+    margin-bottom: 20px;
+}
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+#google,#apple{
+    font-size: 1.5rem;
+    vertical-align: middle;
+    
+}
+.google,.apple{
+    padding: 8px;
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 18px;
+    border: 1px solid var(--main-color);
+    border-radius: 2rem;
+}
+span{
+    font-size: .9rem;
+}
+.bx{
+    margin-right: 20px;
+}
+.line{
+    text-align: center;
+}
+.line span{
+    color: var(--text-color);
+ 
+}
+.line span:after{
+    content: "";
+    display: inline-block;
+    width: 30%;
+    height: 2px;
+    background-color: var(--bg-color);
+    margin-left:6px;
+    vertical-align: middle;
+
+}
+.line span:before{
+    content: "";
+    display: inline-block;
+    width: 30%;
+    height: 2px;
+    background-color: var(--bg-color);
+    margin-right:6px;
+    vertical-align: middle;
+}
