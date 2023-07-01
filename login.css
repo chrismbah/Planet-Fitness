@@ -22,10 +22,11 @@
 .login-card{
     width: 500px;
     height: 500px;
+
     background-color: var(--secondary-color);
     border-radius: 2.2rem;
     position: relative;
-    padding: 10px 15px;
+    padding: 10px 70px;
 }
 .logo-container{
     text-align: center;
@@ -41,6 +42,9 @@
     font-size:1.4rem;
     margin-bottom: 20px;
 }
+.logo-text h4{
+    font-weight: 500;
+}
 a{
     text-decoration: none;
     color: var(--text-color);
@@ -53,7 +57,7 @@ a{
 .google,.apple{
     padding: 8px;
     display: block;
-    width: 70%;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
     margin-bottom: 18px;
@@ -68,6 +72,7 @@ span{
 }
 .line{
     text-align: center;
+    margin-bottom:10px ;
 }
 .line span{
     color: var(--text-color);
@@ -91,4 +96,15 @@ span{
     background-color: var(--bg-color);
     margin-right:6px;
     vertical-align: middle;
+}
+.input{
+    text-align: center;
+}
+.text-bar{
+    width: 100%;
+    padding: 10px 8px;
+    font-size: .9rem;
+    background:#e9e6e6 ;
+    border-radius: .5rem;
+    outline: none;
 }
