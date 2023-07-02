@@ -18,15 +18,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: .5s all ease-out;
+
 }
 .login-card{
     width: 500px;
     height: auto;
-
     background-color: var(--secondary-color);
     border-radius: 2.2rem;
     position: relative;
     padding: 20px 70px;
+    transition: .5s all ease-out;
 }
 .logo-container{
     text-align: center;
@@ -128,10 +130,11 @@ span{
     padding: 8px 0;
     border-radius: 2rem;
     margin-bottom: 20px;
-    transition: .2s all ease;
+    transition: .4s all ease;
 }
 .next:hover,.forgot:hover{
-    background:#353434;
+    /* transform: scale(.9); */
+    background:#8d8a8a;
     color: black;
 }
 .account{
@@ -145,4 +148,11 @@ span{
     
     color: var(--main-color);
     text-decoration: underline;
+}
+#x-btn{
+    font-size: 1.5rem;
+    color: #ffffff;
+    position: absolute;
+    top: 20px;
+    left: 30px;
 }
